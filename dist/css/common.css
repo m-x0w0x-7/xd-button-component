@@ -83,12 +83,7 @@ body {
   min-height: 100vh;
   font-size: 1.6rem;
   line-height: 1.7;
-  box-sizing: border-box;
   overflow-x: hidden;
-}
-
-body::before, body::after {
-  box-sizing: border-box;
 }
 
 .wrap {
@@ -99,6 +94,10 @@ body::before, body::after {
 
 .exp {
   margin: 40px 0;
+}
+
+.exp p {
+  margin-bottom: 20px;
 }
 
 .contents {
@@ -140,6 +139,7 @@ body::before, body::after {
 
 .button_wrap {
   max-width: 400px;
+  margin-bottom: 40px;
   padding: 40px 20px;
   border: 1px solid #999;
   text-align: center;
