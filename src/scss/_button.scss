@@ -1,0 +1,224 @@
+// setting
+// -----------------------------------------
+$color-main: #2e001f;
+$color-sub: #ff19be;
+$color-disabled: #ccc;
+
+$radius: 8px;
+
+$transition: all 0.3s ease-out;
+
+
+// button default
+// -----------------------------------------
+.button {
+  display: inline-block;
+  padding: 18px 60px;
+  border-radius: $radius;
+  color: #fff;
+  font-size: 1.8rem;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+
+// button 01
+// -----------------------------------------
+.button01 {
+  background: $color-main;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.button02 {
+  background: $color-main;
+  &:hover {
+    background: $color-sub;
+  }
+}
+.button03 {
+  border: 3px solid $color-main;
+  background: $color-main;
+  color: #fff;
+  &:hover {
+    background: #fff;
+    color: $color-main;
+  }
+}
+.button04 {
+  border: 3px solid $color-main;
+  background: #fff;
+  color: $color-main;
+  &:hover {
+    background: $color-main;
+    color: #fff;
+  }
+}
+.button05 {
+  position: relative;
+  background: $color-main;
+  overflow: hidden;
+  z-index: 2;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: $color-sub;
+    transition: $transition;
+  }
+  &:hover {
+    &::after {
+      left: 0;
+    }
+  }
+}
+.button06 {
+  position: relative;
+  background: $color-main;
+  overflow: hidden;
+  z-index: 2;
+  &::after {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: $color-sub;
+    transition: $transition;
+  }
+  &:hover {
+    &::after {
+      top: 0;
+    }
+  }
+}
+.button07 {
+  position: relative;
+  background: $color-main;
+  overflow: hidden;
+  z-index: 2;
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+    background: $color-sub;
+    transition: $transition;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &:hover {
+    &::before, &::after {
+      width: 50%;
+    }
+  }
+}
+.button08 {
+  position: relative;
+  background: $color-main;
+  overflow: hidden;
+  z-index: 2;
+  &::before, &::after {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0;
+    background: $color-sub;
+    transition: $transition;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &:hover {
+    &::before, &::after {
+      height: 50%;
+    }
+  }
+}
+.button09 {
+  position: relative;
+  background: $color-sub;
+  overflow: hidden;
+  z-index: 2;
+  &::before, &::after {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: $color-main;
+    transition: $transition;
+  }
+  &::before {
+    left: 0;
+  }
+  &::after {
+    right: 0;
+  }
+  &:hover {
+    &::before, &::after {
+      width: 0;
+    }
+  }
+}
+.button10 {
+  position: relative;
+  background: $color-sub;
+  overflow: hidden;
+  z-index: 2;
+  &::before, &::after {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 50%;
+    background: $color-main;
+    transition: $transition;
+  }
+  &::before {
+    top: 0;
+  }
+  &::after {
+    bottom: 0;
+  }
+  &:hover {
+    &::before, &::after {
+      height: 0;
+    }
+  }
+}
+.button11 {
+  width: 200px;
+  padding: 18px;
+  background: $color-main;
+  &:hover {
+    letter-spacing: 0.2em;
+  }
+}
