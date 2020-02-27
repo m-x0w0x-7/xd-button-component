@@ -81,6 +81,7 @@ select {
 body {
   width: 100%;
   min-height: 100vh;
+  color: #333;
   font-size: 1.6rem;
   line-height: 1.7;
   overflow-x: hidden;
@@ -92,17 +93,61 @@ body {
   padding: 0 16px;
 }
 
+.page_head {
+  position: relative;
+  margin: 20px 0 40px;
+  padding: 0.5em 1em 0.5em 1.5em;
+  border: 1px solid #aaa;
+  color: #2e001f;
+  font-size: 2.4rem;
+  font-weight: normal;
+}
+
+.page_head::before {
+  position: absolute;
+  top: 50%;
+  left: 0.75em;
+  transform: translateY(-50%);
+  content: "";
+  width: 6px;
+  height: calc(100% - 0.5em * 2);
+  border-radius: 6px;
+  background: #ff19be;
+}
+
 .exp {
-  margin: 40px 0;
+  margin: 0 0 40px;
 }
 
 .exp p {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
+}
+
+.exp .video {
+  margin-bottom: 40px;
+}
+
+.exp a {
+  padding: 0 0.2em;
+  background: linear-gradient(transparent 40%, #ffd9f2 40%);
+  color: #2e001f;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.exp a:hover {
+  color: #ff19be;
 }
 
 .contents {
   padding: 80px 0;
   border-bottom: 1px solid #2e001f;
+}
+
+@media screen and (max-width: 480px) {
+  .contents {
+    padding: 60px 0;
+  }
 }
 
 .contents_head {
@@ -143,6 +188,17 @@ body {
   padding: 40px 20px;
   border: 1px solid #999;
   text-align: center;
+}
+
+.summary {
+  padding: 80px 0;
+  border-bottom: 1px solid #2e001f;
+}
+
+@media screen and (max-width: 480px) {
+  .summary {
+    padding: 60px 0;
+  }
 }
 
 .button {
