@@ -17,7 +17,8 @@ const del = require('del');
 const paths = {
   scss: './src/scss',
   root: './dist',
-  css: './dist/css'
+  css: './dist/css',
+  docs: './docs'
 }
 
 
@@ -94,7 +95,21 @@ function watch(done) {
 
 // clean
 function clean() {
-  return del(paths.root + '/**/*');
+  return del(paths.docs + '/**/*');
+}
+
+
+// copy
+function copy() {
+  return gulp.src(
+    // コピーするファイル
+    [paths.root + '/**/*.*', '!' + paths.root + '/css/common.css.map'],
+  {
+    // コピー元ディレクトリ
+    base: paths.root
+  })
+    // コピー先ディレクトリ
+  .pipe(gulp.dest(paths.docs));
 }
 
 
@@ -107,6 +122,5 @@ exports.default = gulp.series(
 // default task(build)
 exports.build = gulp.series(
   clean,
-  gulp.parallel(scssBuild),
-  gulp.parallel(serve, watch)
-)
+  copy
+);
