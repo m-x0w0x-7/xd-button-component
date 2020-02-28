@@ -127,6 +127,11 @@ body {
   margin-bottom: 40px;
 }
 
+.exp .video iframe {
+  width: 100%;
+  height: 40vw;
+}
+
 .exp a {
   padding: 0 0.2em;
   background: linear-gradient(transparent 40%, #ffd9f2 40%);
