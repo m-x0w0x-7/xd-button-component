@@ -21,6 +21,11 @@ $transition: all 0.3s ease-out;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-out;
+  &.disabled {
+    background: $color-disabled;
+    pointer-events: none;
+    cursor: default;
+  }
 }
 
 
@@ -28,7 +33,7 @@ $transition: all 0.3s ease-out;
 // -----------------------------------------
 .button01 {
   background: $color-main;
-  &:hover {
+  &:hover, &:active {
     opacity: 0.8;
   }
 }
@@ -37,7 +42,7 @@ $transition: all 0.3s ease-out;
 // -----------------------------------------
 .button02 {
   background: $color-main;
-  &:hover {
+  &:hover, &:active {
     background: $color-sub;
   }
 }
@@ -48,7 +53,7 @@ $transition: all 0.3s ease-out;
   border: 3px solid $color-main;
   background: $color-main;
   color: #fff;
-  &:hover {
+  &:hover, &:active {
     background: #fff;
     color: $color-main;
   }
@@ -60,7 +65,7 @@ $transition: all 0.3s ease-out;
   border: 3px solid $color-main;
   background: #fff;
   color: $color-main;
-  &:hover {
+  &:hover, &:active {
     background: $color-main;
     color: #fff;
   }
@@ -85,7 +90,7 @@ $transition: all 0.3s ease-out;
     background: $color-sub;
     transition: $transition;
   }
-  &:hover {
+  &:hover, &:active {
     &::after {
       left: 0;
     }
@@ -111,7 +116,7 @@ $transition: all 0.3s ease-out;
     background: $color-sub;
     transition: $transition;
   }
-  &:hover {
+  &:hover, &:active {
     &::after {
       top: 0;
     }
@@ -142,7 +147,7 @@ $transition: all 0.3s ease-out;
   &::after {
     right: 0;
   }
-  &:hover {
+  &:hover, &:active {
     &::before, &::after {
       width: 50%;
     }
@@ -173,7 +178,7 @@ $transition: all 0.3s ease-out;
   &::after {
     bottom: 0;
   }
-  &:hover {
+  &:hover, &:active {
     &::before, &::after {
       height: 50%;
     }
@@ -204,7 +209,7 @@ $transition: all 0.3s ease-out;
   &::after {
     right: 0;
   }
-  &:hover {
+  &:hover, &:active {
     &::before, &::after {
       width: 0;
     }
@@ -235,7 +240,7 @@ $transition: all 0.3s ease-out;
   &::after {
     bottom: 0;
   }
-  &:hover {
+  &:hover, &:active {
     &::before, &::after {
       height: 0;
     }
@@ -248,7 +253,7 @@ $transition: all 0.3s ease-out;
   width: 200px;
   padding: 18px;
   background: $color-main;
-  &:hover {
+  &:hover, &:active {
     letter-spacing: 0.2em;
   }
 }

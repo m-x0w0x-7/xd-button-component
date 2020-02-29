@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Box sizing rules */
 *,
 *::before,
@@ -82,6 +83,7 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #333;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
   font-size: 1.6rem;
   line-height: 1.7;
   overflow-x: hidden;
@@ -218,11 +220,17 @@ body {
   transition: all 0.3s ease-out;
 }
 
+.button.disabled {
+  background: #ccc;
+  pointer-events: none;
+  cursor: default;
+}
+
 .button01 {
   background: #2e001f;
 }
 
-.button01:hover {
+.button01:hover, .button01:active {
   opacity: 0.8;
 }
 
@@ -230,7 +238,7 @@ body {
   background: #2e001f;
 }
 
-.button02:hover {
+.button02:hover, .button02:active {
   background: #ff19be;
 }
 
@@ -240,7 +248,7 @@ body {
   color: #fff;
 }
 
-.button03:hover {
+.button03:hover, .button03:active {
   background: #fff;
   color: #2e001f;
 }
@@ -251,7 +259,7 @@ body {
   color: #2e001f;
 }
 
-.button04:hover {
+.button04:hover, .button04:active {
   background: #2e001f;
   color: #fff;
 }
@@ -276,7 +284,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.button05:hover::after {
+.button05:hover::after, .button05:active::after {
   left: 0;
 }
 
@@ -300,7 +308,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-.button06:hover::after {
+.button06:hover::after, .button06:active::after {
   top: 0;
 }
 
@@ -331,7 +339,7 @@ body {
   right: 0;
 }
 
-.button07:hover::before, .button07:hover::after {
+.button07:hover::before, .button07:hover::after, .button07:active::before, .button07:active::after {
   width: 50%;
 }
 
@@ -362,7 +370,7 @@ body {
   bottom: 0;
 }
 
-.button08:hover::before, .button08:hover::after {
+.button08:hover::before, .button08:hover::after, .button08:active::before, .button08:active::after {
   height: 50%;
 }
 
@@ -393,7 +401,7 @@ body {
   right: 0;
 }
 
-.button09:hover::before, .button09:hover::after {
+.button09:hover::before, .button09:hover::after, .button09:active::before, .button09:active::after {
   width: 0;
 }
 
@@ -424,7 +432,7 @@ body {
   bottom: 0;
 }
 
-.button10:hover::before, .button10:hover::after {
+.button10:hover::before, .button10:hover::after, .button10:active::before, .button10:active::after {
   height: 0;
 }
 
@@ -434,7 +442,7 @@ body {
   background: #2e001f;
 }
 
-.button11:hover {
+.button11:hover, .button11:active {
   letter-spacing: 0.2em;
 }
 /*# sourceMappingURL=common.css.map */
