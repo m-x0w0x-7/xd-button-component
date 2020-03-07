@@ -1,8 +1,9 @@
-XDでボタンを作成する場合のコンポーネントをまとめました。
-XDで作った動きを実装する場合のScssもあります。
-
-XD、Scssファイルはご自由にお使いください。
-
-内容については下記にまとめています。
-実際の動きも下記で確認できます。
-https://m-x0w0x-7.github.io/xd-button-component/
+XDでボタンを作成する場合のコンポーネントをまとめました。<br>
+XDで作った動きを実装する場合のScssもあります。<br>
+<br>
+XD、Scssファイルはご自由にお使いください。<br>
+<br>
+内容については下記にまとめています。<br>
+実際の動きも下記で確認できます。<br>
+<br>
+<a href="https://m-x0w0x-7.github.io/xd-button-component/">https://m-x0w0x-7.github.io/xd-button-component/</a>
