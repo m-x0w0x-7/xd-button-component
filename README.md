@@ -1,11 +1,8 @@
-# Usage
+XDでボタンを作成する場合のコンポーネントをまとめました。
+XDで作った動きを実装する場合のScssもあります。
 
-## gulpのインストール
-npm install
+XD、Scssファイルはご自由にお使いください。
 
-## remoteの変更
-git remote set-url origin {new url}
-
-## gulpの起動
-開発時は【npx gulp】で起動。  
-本番ファイルは【npx gulp build】で起動。
+内容については下記にまとめています。
+実際の動きも下記で確認できます。
+https://m-x0w0x-7.github.io/xd-button-component/
