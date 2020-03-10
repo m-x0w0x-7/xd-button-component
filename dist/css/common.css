@@ -125,6 +125,14 @@ body {
   margin-bottom: 1em;
 }
 
+.exp .link {
+  margin-bottom: 2em;
+}
+
+.exp .link li {
+  margin-bottom: 0.5em;
+}
+
 .exp .note {
   margin-bottom: 2em;
   color: #999;
